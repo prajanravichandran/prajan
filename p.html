@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person={
+         first_name:'NIVASH',
+         last_name:'P'
+        }
+        let fullname=function(greet){
+             return `${greet} ${this.first_name} ${this.last_name}`
+        }
+        console.log(fullname.apply(person,['hello']));
+        console.log(fullname.call(person,'hi'));
+     </script>
+</body>
+</html>
